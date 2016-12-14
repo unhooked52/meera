@@ -10,7 +10,7 @@ myApp.service("apiHttpService", ['$http',
         		//token = token.access_token;
             	//http.defaults.headers.common['Authorization'] = 'Bearer '+token;
         //	}
-            var __api_root = "http://127.0.0.1:8080/demo/";
+            var __api_root = "http://localhost:8080/demo/";
             //if(navigator.cookieEnabled){
             	http({
                     method : 'GET',
@@ -52,7 +52,7 @@ myApp.service("apiHttpService", ['$http',
          },
          
          put : function(URL, opt, _success_cb, _error_cb) {
-        	 var __api_root = "http://127.0.0.1:8080/demo/";
+        	 var __api_root = "http://localhost:8080/demo/";
              
              http({
                  method : 'PUT',
