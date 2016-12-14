@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ganpati Bappa Morya</title>
+	
+</head>
+<body ng-app="myApp" id="mainApp">
+<!--Now it Tells to AngularJS to be active in this portion of the page. In this case the entire document.(due to we apply on body tag ) -->
+    
+    <section class="main-container">
+        <div class="container-fluid innerContainer css-class6"> 
+			<header>Ganpati Bappa Morya</header>
+            <div class="viewContainer">
+                <div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<ng-view ng-class="myCssVar"></ng-view>
+					</div>
+                </div>   
+            </div>       
+        </div>
+    </section>   
+    <!-- add our main script file -->
+    <!-- bootstrap--> 
+    <script type="text/javascript" src="resources/js/angular.min.js"></script>
+<script type="text/javascript" src="resources/js/angular-route.js"></script>
+    <!-- add controller -->
+     
+    <script type="text/javascript" src="App/app.js"></script>
+	<script type="text/javascript" src="App/module/login/controller/loginCtrl.js"></script>
+	<script type="text/javascript" src="App/module/common/services/httpService.js"></script>
+
+</body>
+</html>
